@@ -70,3 +70,23 @@ header {
     transition: var(--transition);
     position: relative;
 }
+
+
+.nav-link:hover {
+    background: rgba(255,255,255,0.06);
+    color: white;
+    background: rgba(67, 97, 238, 0.1);
+    color: var(--primary);
+}
+
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: -8px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--primary));
+    border-radius: 4px;
+}
